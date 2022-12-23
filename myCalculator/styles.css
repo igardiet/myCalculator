@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Rubik Distressed', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+    cursor: url(assets/mousee.jpeg), progress;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: url(assets/p.jpeg);
+    background-size: cover;
+}
+
+.whole-calculator {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    margin-top: 0;
+    margin-left: 15%;
+}
+
+.whole-calculator > button {
+    font-size: 2rem;
+    border: 3px solid greenyellow;
+    outline: none;
+    background-color: #fa8231;
+    transition: .5s;
+    border-radius: 100%;
+    padding: 15%;
+    margin: 10%;
+    color: #7efff5;
+}
+
+.whole-calculator > .double-size {
+    border: 5px solid greenyellow;
+    border-radius: 10%;
+    transition: none;
+    padding: 0;
+}
+
+.whole-calculator > .double-size:active {
+    margin: 0;
+    padding: 0;
+    transition: .10s;
+}
+
+.whole-calculator > button:hover {
+    background-color: #fa8231;
+    opacity: .8;
+    color: #8854d0;
+    transform: rotate(360deg);
+}
+
+.whole-calculator > button:active {
+    margin: 30%;
+    padding: 1%;
+    transition: .1s;
+}
+
+.output {
+    grid-column: 1 / -1;
+    margin-top: -5%;
+    background: url(assets/psyc.jpeg);
+    background-size: cover;
+    font-size: 300%;
+    color: #7efff5;
+    border: 10px inherit;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-size: 135%;
+}
+
+.output .screen-history {
+    color: #00d2d3;
+    opacity: .8;
+}
+
+.output .screen-numbers {
+    color: #00d2d3;
+}
+
+.double-size {
+    grid-column: span 2;
+}
+
