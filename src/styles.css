@@ -81,12 +81,12 @@ article {
     font-size: 135%;
 }
 
-.output .screen-history {
+.output .screenHistory {
     color: #00d2d3;
     opacity: .8;
 }
 
-.output .screen-numbers {
+.output .screenActual {
     color: #00d2d3;
 }
 
