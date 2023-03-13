@@ -1,4 +1,4 @@
-# Jazzmin Ecom React App
+# Calculator React App
 Basic calculator styled with CSS, logic powered with JS and state managed with React.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
